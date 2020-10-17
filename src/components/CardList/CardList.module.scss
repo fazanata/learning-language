@@ -1,0 +1,41 @@
+.centerroot {
+  display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;   
+}
+.root {
+  width: 50%;
+  flex-direction: row;
+  flex-wrap:  wrap ;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #fff;
+}
+
+.buttons {
+  margin-right: 100px;
+}
+
+.fonts { 
+  width: 80%;
+  color: rgb(2, 27, 27);
+}
+
+.inputs {
+  color: #000;
+}
+.form {
+  margin-bottom: 24px;
+}

@@ -1,0 +1,31 @@
+.cover {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #fff;
+    
+}
+
+
+.cover .header {
+    font-size: 68px;
+    color: black;
+    padding: 24px 0;
+}
+
+.cover .descr {
+    color: black;
+    padding: 15px 0 30px 0;
+    font-size: 20px;
+    line-height: 1.55;
+}

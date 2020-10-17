@@ -1,0 +1,76 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.card {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+    perspective: 1000px;
+    height: 33px;
+    width: 200px;
+    margin-right: 6px;
+    
+  
+    &.done {
+      .cardInner {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  
+  .cardInner {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .cardFront, 
+  .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 6px 0px;
+  }
+
+  .isRemembered {
+    .cardFront,
+    .cardBack {
+      text-decoration: line-through;
+    }
+  }
+  
+  .cardFront {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .cardBack {
+    background-color: #1BB95E;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .icons {
+    font-size: 26px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color:grey;
+    &:hover {
+      color: #1BB95E;
+    }
+    &.clicked {
+      color: #052412;
+    }
+  }
